@@ -21,6 +21,7 @@
     width: 100%;
     margin-left: 110px;
     margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 .tit{
     margin-left: 85px;
@@ -28,19 +29,24 @@
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
-	margin: 40px auto 100px auto;
+
+    margin-left: 0px;
+    margin-bottom: 10px;
 
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px;
 }
-.caja{
-    border: 2px solid black;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 10%;
+.ciudad{
+    text-align: center;
 }
-
+.imgclima{
+    width: 190px;
+    align-items: center;
+}
+.titulopag{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .mapa{
