@@ -37,6 +37,17 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px;
 }
+#restau{
+    width: 90%;
+	max-width: 1000px;
+
+    margin-left: 0px;
+    margin-bottom: 10px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
 .ciudad{
     text-align: center;
 }
@@ -45,7 +56,10 @@
     align-items: center;
 }
 .titulopag{
-    text-align: center;
+    text-align:left;
+    margin-left: 110px;
+    margin-bottom: 30px;
+
 }
 
 @media (max-width: 768px) {
