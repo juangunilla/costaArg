@@ -64,8 +64,30 @@ body{
     text-align: center;
 }
 .imgclima{
-    width: 190px;
-    align-items: center;
+    display: block;
+    margin: auto;
+    width: 70px;
+}
+.subti{
+    text-align: center;
+    word-spacing:40px;
+    font-weight: bold;
+}
+.humedad{
+    text-align: left;
+}
+.viento{
+    text-align: center;
+    word-spacing: 70px;
+}
+.tM{
+    text-align: center;
+    word-spacing:60px ;
+}
+.sensacion{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 .titulopag{
     text-align:left;
