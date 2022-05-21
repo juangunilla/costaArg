@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" 
+              crossorigin="anonymous">
+      </script>
     <link rel="stylesheet" href="estilosBack.css">
     <title>BackClima</title>
 
 </head>
 <body>
-    <h1 class="backtitulo">Carga de climas</h1>
-    <div class="cuadro" >
-        <form action="" method="post">
-            <label for="POST-name">Nombre:</label>
-            <input id="POST-name" type="text" name="name">
-            <input type="submit" value="Save">
-          </form>
 
+    <h1 class="backtitulo">Carga de climas</h1>
+  <form id="form">
+      <input type="text" name="Ciudad" >Ciudad<br>
+      <input  type="text" name="img">img<br>
+      <button type="submit">submit</button>
+  </form>
 
     </div>
 </body>
+<script src="cargacli.js"></script>
+
 </html>
