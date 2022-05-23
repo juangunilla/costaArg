@@ -8,19 +8,61 @@
     "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" 
               crossorigin="anonymous">
       </script>
+      
     <link rel="stylesheet" href="estilosBack.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <title>BackClima</title>
 
 </head>
 <body>
 
     <h1 class="backtitulo">Carga de climas</h1>
-  <form id="form">
-      <input type="text" name="Ciudad" >Ciudad<br>
-      <input  type="text" name="img">img<br>
-      <button type="submit">submit</button>
-  </form>
+    <div class="wrapper">
+  <form id="forms" name="forms" class="card">
+      <!-- <input type="text" name="ciudad" id="ciudad" > 
+      <label for="">Ciudad</label> -->
+      <label for="" >Ciudad</label>
+      <select name="ciudad" id="ciudad">
+        <option value="Mar del Plata">Mar Del Plata</option>
+        <option value="Santa Teresita">Santa Teresita</option>
+        <option value="Miramar">Miramar</option>
+        <option value="Mar de cobo">Mar de cobo</option>
+        <option value="Mar chiquita">Mar chiquita</option>
+        <option value="Mar del tuyu">Mar del tuyu</option>
+      </select>
+      <!-- <input type="text" name="img" class="conteFormClima" id="img" >
+      <label for="">imagen</label> -->
+      <label for="">Imagen del tiempo</label>
+      <select name="img" id="img">
+        <option value="https://cdn.icon-icons.com/icons2/33/PNG/256/sunny_sunshine_weather_2778.png">Soleado</option>
+        
+        <option value="https://cdn.icon-icons.com/icons2/33/PNG/256/sunny_sun_cloud_time_time_2777.png">Algo Nublado</option>
+        <option value="https://cdn.icon-icons.com/icons2/33/PNG/256/timeintervalsunny_sunny_sunshine_cloud_tiempo_2792.png">Parcialmente Nublado</option>
 
+      </select>
+      
+      <input type="text" name="descripcion" class="conteFormClima" id="descripcion" >
+      <label for="">descripción</label>
+      
+      <input type="text" name="humedad" class="conteFormClima" id="humedad" >
+      <label for="">Humedad</label>
+      
+      <input type="text" name="viento" class="conteFormClima" id="viento" >
+      <label for="">Viento</label>
+      
+      <input type="text" name="tmax" class="conteFormClima" id="tmax" >
+      <label for="">Temperatura Maxima</label>
+      
+      <input type="text" name="tmin" class="conteFormClima" id="tmin" >
+      <label for="">Temperatura Minima</label>
+      
+      <input type="text" name="st" class="conteFormClima" id="st" >
+      <label for="">Sensación Termica</label>
+      
+      <input type="submit" value="Enviar" class="boton">
+      <input type="hidden" name="id">
+  </form>
     </div>
 </body>
 <script src="cargacli.js"></script>

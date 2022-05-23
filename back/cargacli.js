@@ -1,20 +1,33 @@
-window.addEventListener('load', () => {
-    const formElement = document.querySelector('form');
-    formElement.addEventListener('submit', (e) =>{
-        //to prevent reload
-        e.preventDefault();
-        console.log(form.querySelector('input[name="Ciudad"]'))
-        //creates a multipart/form-data object
-       
-        const data = new FormData(formElement);
-        axios({
-          method  : 'post',
-          url : 'http://localhost:3000/api/climas',
-          data : data,
-        })
-        .then((res)=>{
-          console.log(res);
-        })
-        .catch((err) => {throw err});
-    });
-});
+  var datos = document.getElementById("forms")
+   document.addEventListener("submit", async e=>{
+       if(e.target === datos ){
+           e.preventDefault();
+           try{
+               let options ={
+                   method:"POST",
+                   headers:{
+                       "content-type": "application/json;charset=utf-8"
+                   },
+                    data:JSON.stringify({
+                       Ciudad:e.target.ciudad.value,
+                       img:e.target.img.value,
+                       Descripcion:e.target.descripcion.value,
+                       Humedad:e.target.humedad.value,
+                       Viento:e.target.viento.value,
+                       tMax:e.target.tmax.value,
+                       tMin:e.target.tmin.value,
+                       sT:e.target.st.value  
+                   })
+                
+               },
+               
+               res=await axios("http://localhost:3000/api/climas",options),
+               json= await res.data();
+               alert(data);
+
+           }catch(err){
+
+           }
+           alert("Enviado");
+       }
+   });
