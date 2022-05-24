@@ -10,13 +10,14 @@
                    },
                     data:JSON.stringify({
                        Ciudad:e.target.ciudad.value,
-                       img:e.target.img.value,
+                       img:e.target.Img.value,
                        Descripcion:e.target.descripcion.value,
                        Humedad:e.target.humedad.value,
                        Viento:e.target.viento.value,
+                       Direccion:e.target.direccion.value,
                        tMax:e.target.tmax.value,
                        tMin:e.target.tmin.value,
-                       sT:e.target.st.value  
+                       inUv:e.target.inUv.value  
                    })
                 
                },
